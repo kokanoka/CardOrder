@@ -42,7 +42,7 @@ public class CardOrderFormTest {
     void shouldTest() {
         driver.get("http://localhost:9999");
         driver.findElement(cssSelector("[type='text']")).sendKeys("Элина");
-        driver.findElement(cssSelector("[type='tel']")).sendKeys("+79870242824");
+        driver.findElement(cssSelector("[type='tel']")).sendKeys("+79870242825");
         driver.findElement(cssSelector("[class='checkbox__box']")).click();
         driver.findElement(tagName("button")).click();
         String actualMessage = driver.findElement(cssSelector("[data-test-id='order-success']")).getText().strip();
